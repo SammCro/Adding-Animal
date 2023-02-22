@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import './Styles/AddAnimal.css';
+
 import bird from './Assets/bird.svg';
 import cat from './Assets/cat.svg';
 import cow from './Assets/cow.svg';
@@ -32,7 +34,7 @@ function AddAnimal({type}){
     return(
         <div  onClick={handleImageClick}>
             <img src={svgMap[type]} alt='animal' width={'100px'} height={'100px'}></img>
-            <img src={heart} width={heartSize} height={heartSize} alt="heart" hidden={heartHidden}></img>
+            <img src={heart} width={heartSize} height={heartSize} alt="heart" hidden={heartHidden} className="heart"></img>
         </div>
     )
 }
